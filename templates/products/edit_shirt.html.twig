@@ -1,0 +1,104 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Musteroid Insert{% endblock %}
+
+{% block body %}
+  <head>
+    <title>Musteroid</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="icon" href="img/muszoid-removebg-preview1.png">
+  
+    {% block stylesheets %}
+
+        <style>
+          input {
+            width: 100%;
+            padding: 10px 200px 10px 10px;
+            margin: 8px 0px;
+            display: inline-block;
+            border-radius: 4px;
+            border: 1px solid #808080;
+            border-left: 6px solid #0B5ED7;
+            transition: 0.5s;
+          }
+
+          input:focus {
+            border: 3px solid #0B5ED7;
+          }
+
+          input:hover {
+            background-color: rgb(200, 225, 247);
+          }
+
+          label {
+            border: none;
+          }
+
+          input[type=submit] {
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+          }
+
+          .form-group {
+            top: 60%;
+            left: 50%;
+            padding: 30px;
+            transform: translate(-50%, -50%);
+            position: absolute;
+          }
+        </style>
+
+    {% endblock %}
+
+
+  </head>
+  <body>
+    <div>
+       <nav class="navbar navbar-expand-lg navbar-light py-4">
+        <div class="container"><a class="navbar-brand" href="#"><img class="img-fluid" src="img/muszoid-removebg-preview.png" alt="" width="120px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav08" aria-controls="nav08" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="nav08">
+            <ul class="d-none d-lg-flex navbar-nav mx-auto mt-3 mt-lg-0 mb-3 mb-lg-0 position-absolute top-50 start-50 translate-middle">
+              <li class="nav-item me-4"><a class="nav-link" href="../inventory">Home</a></li>
+              <li class="nav-item me-4"><a class="nav-link" href="../products">Inventory</a></li>
+              <li class="nav-item me-4"><a class="nav-link" href="../inventory/contact">About Us</a></li>
+            </ul>
+            <ul class="navbar-nav mt-3 mt-lg-0 mb-3 mb-lg-0 d-lg-none">
+              <li class="nav-item me-4"><a class="nav-link" href="../inventory">Home</a></li>
+              <li class="nav-item me-4"><a class="nav-link" href="../products">Inventory</a></li>
+              <li class="nav-item me-4"><a class="nav-link" href="../inventory/contact">About Us</a></li>
+            </ul>
+            <div class="ms-lg-auto">{% if app.user == null %}
+              <a class="nav-link" href="/{{app.user ? 'logout' : 'login'}}" @click="isOpen = false"><button class="btn btn-primary me-2"> {{ app.user ? 'Logout' : 'Login' }} </button></a>
+              {% else %}
+              <a class="nav-link" href="/{{app.user ? 'logout' : 'login'}}" @click="isOpen = false"><button class="btn btn-danger me-2"> {{ app.user ? 'Logout' : 'Login' }} </button></a>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="text-center">
+        <h2>Insert new product</h2>
+        <a href="{{ path('shirt_index') }}" class="btn btn-outline-danger">Back to the list</a>
+      </div>
+      <br>
+      
+      <div class="form-group">
+       {{ form_start(edit_form) }}
+        {{ form_widget(edit_form) }}
+        <input type="submit" value="Edit" class="btn btn-primary text-center" />
+         {{ form_end(edit_form) }}
+      </div>
+      
+
+ 
+      
+   
+{% endblock %}

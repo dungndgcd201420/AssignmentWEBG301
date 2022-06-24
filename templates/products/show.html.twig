@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+ <table>
+    <tbody>
+    <tr>
+      <th>ID of Album</th>
+      <td>{{ album.id }}</td>
+    </tr>
+    <tr>
+      <th>Album Name</th>
+      <td>{{album.name }}</td>
+    </tr>
+    <tr>
+      <th>Artist</th>
+      <td>{{ album.artist }}</td>
+    </tr>
+    <tr>
+      <th>Price of Album</th>
+      <td>{{ album.price}}</td>
+    </tr>
+    <tr>
+      <th>Quantity</th>
+      <td>{{ album.quantity}}</td>
+    </tr>
+    </tbody>
+  
+  </table>
+        
+   
+  <ul>
+    <li>
+      <a href="{{ path('album_index') }}">Back to the list</a>
+    </li>
+  </ul>
+
+
+ 
+{% endblock %}

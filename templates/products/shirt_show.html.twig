@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+ <table>
+    <tbody>
+    <tr>
+      <th>ID of Shirt</th>
+      <td>{{ shirt.id }}</td>
+    </tr>
+    <tr>
+     <tr>
+      <th>Name of Shirt</th>
+      <td>{{ shirt.Name }}</td>
+    </tr>
+    <tr>
+     <tr>
+      <th>Brand of Shirt</th>
+      <td>{{ shirt.Brand}}</td>
+    </tr>
+    <tr>
+      <th>Shirt Color</th>
+      <td>{{shirt.Color }}</td>
+    </tr>
+    <tr>
+      <th>Shirt Price</th>
+      <td>{{ shirt.Price }}</td>
+    </tr>
+    <tr>
+      <th>Shirt Quantity</th>
+      <td>{{ shirt.Quantity}}</td>
+    </tr>
+
+    </tbody>
+  </table>
+
+  <ul>
+    <li>
+      <a href="{{ path('shirt_index') }}">Back to the list</a>
+    </li>
+  </ul>
+
+
+ 
+{% endblock %}

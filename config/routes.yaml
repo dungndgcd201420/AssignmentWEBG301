@@ -1,0 +1,8 @@
+# index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+# album_delete:
+#     pattern: /products/album/{id}
+#     controller: App\Controller\ProductsController::deleteAlbum
+#     methods: DELETE
