@@ -168,6 +168,7 @@ class __TwigTemplate_f5ca431f6ff7bbdc137485f81947892782f7d0eb789034d1df9ab00ceea
               <table class=\"table align-middle mb-0 bg-white table-hover\">
                 <thead class=\"bg-light\">
                   <tr>
+                    <th class=\"header\" scope=\"col\">ID</th>
                     <th class=\"header\" scope=\"col\">Name</th>
                     <th class=\"header\" scope=\"col\">Artist</th>
                     <th class=\"header\" scope=\"col\">Price</th>
@@ -179,44 +180,48 @@ class __TwigTemplate_f5ca431f6ff7bbdc137485f81947892782f7d0eb789034d1df9ab00ceea
                 </thead>
                   <!-- Product template -->
                      ";
-            // line 77
+            // line 78
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["albums"]) || array_key_exists("albums", $context) ? $context["albums"] : (function () { throw new RuntimeError('Variable "albums" does not exist.', 77, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["albums"]) || array_key_exists("albums", $context) ? $context["albums"] : (function () { throw new RuntimeError('Variable "albums" does not exist.', 78, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["album"]) {
-                // line 78
+                // line 79
                 echo "              <tr>
                 <td>";
-                // line 79
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "name", [], "any", false, false, false, 79), "html", null, true);
-                echo "</td>
-                <td>";
                 // line 80
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "Artist", [], "any", false, false, false, 80), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "id", [], "any", false, false, false, 80), "html", null, true);
                 echo "</td>
                 <td>";
                 // line 81
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "Price", [], "any", false, false, false, 81), "html", null, true);
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "name", [], "any", false, false, false, 81), "html", null, true);
+                echo "</td>
+                <td>";
+                // line 82
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "Artist", [], "any", false, false, false, 82), "html", null, true);
+                echo "</td>
+                <td>";
+                // line 83
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "Price", [], "any", false, false, false, 83), "html", null, true);
                 echo "</td>
                  <td>";
-                // line 82
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "Quantity", [], "any", false, false, false, 82), "html", null, true);
+                // line 84
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["album"], "Quantity", [], "any", false, false, false, 84), "html", null, true);
                 echo "</td>
                 <td>
                 <a class=\"btn btn-primary\" href=\"";
-                // line 84
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("album_show", ["id" => twig_get_attribute($this->env, $this->source, $context["album"], "id", [], "any", false, false, false, 84)]), "html", null, true);
+                // line 86
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("album_show", ["id" => twig_get_attribute($this->env, $this->source, $context["album"], "id", [], "any", false, false, false, 86)]), "html", null, true);
                 echo "\">Show Details</a>
                 </td>
                  <td>
                       <a type=\"button\" class=\"btn btn-outline-primary\" href=\"";
-                // line 87
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("album_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["album"], "id", [], "any", false, false, false, 87)]), "html", null, true);
+                // line 89
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("album_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["album"], "id", [], "any", false, false, false, 89)]), "html", null, true);
                 echo "\">Edit</a>
                     </td>
                      <td>
                       <a type=\"button\" class=\"btn btn-danger\"  href=\"";
-                // line 90
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("album_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["album"], "id", [], "any", false, false, false, 90)]), "html", null, true);
+                // line 92
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("album_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["album"], "id", [], "any", false, false, false, 92)]), "html", null, true);
                 echo "\">Delete</a>
                     </td>
                   
@@ -226,9 +231,9 @@ class __TwigTemplate_f5ca431f6ff7bbdc137485f81947892782f7d0eb789034d1df9ab00ceea
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['album'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 95
-            echo "           ";
             // line 97
+            echo "           ";
+            // line 99
             echo "              </table>
             </div>
           </div>
@@ -237,7 +242,7 @@ class __TwigTemplate_f5ca431f6ff7bbdc137485f81947892782f7d0eb789034d1df9ab00ceea
 \t  </section>
   ";
         }
-        // line 104
+        // line 106
         echo "  
     <script src=\"js/bootstrap/bootstrap.bundle.min.js\"></script>
   </body>
@@ -263,7 +268,7 @@ class __TwigTemplate_f5ca431f6ff7bbdc137485f81947892782f7d0eb789034d1df9ab00ceea
 
     public function getDebugInfo()
     {
-        return array (  241 => 104,  232 => 97,  230 => 95,  219 => 90,  213 => 87,  207 => 84,  202 => 82,  198 => 81,  194 => 80,  190 => 79,  187 => 78,  183 => 77,  157 => 53,  152 => 50,  150 => 49,  143 => 44,  138 => 42,  132 => 40,  127 => 38,  121 => 36,  119 => 35,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  246 => 106,  237 => 99,  235 => 97,  224 => 92,  218 => 89,  212 => 86,  207 => 84,  203 => 83,  199 => 82,  195 => 81,  191 => 80,  188 => 79,  184 => 78,  157 => 53,  152 => 50,  150 => 49,  143 => 44,  138 => 42,  132 => 40,  127 => 38,  121 => 36,  119 => 35,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -334,6 +339,7 @@ class __TwigTemplate_f5ca431f6ff7bbdc137485f81947892782f7d0eb789034d1df9ab00ceea
               <table class=\"table align-middle mb-0 bg-white table-hover\">
                 <thead class=\"bg-light\">
                   <tr>
+                    <th class=\"header\" scope=\"col\">ID</th>
                     <th class=\"header\" scope=\"col\">Name</th>
                     <th class=\"header\" scope=\"col\">Artist</th>
                     <th class=\"header\" scope=\"col\">Price</th>
@@ -346,6 +352,7 @@ class __TwigTemplate_f5ca431f6ff7bbdc137485f81947892782f7d0eb789034d1df9ab00ceea
                   <!-- Product template -->
                      {% for album in albums %}
               <tr>
+                <td>{{ album.id }}</td>
                 <td>{{ album.name }}</td>
                 <td>{{ album.Artist }}</td>
                 <td>{{ album.Price }}</td>

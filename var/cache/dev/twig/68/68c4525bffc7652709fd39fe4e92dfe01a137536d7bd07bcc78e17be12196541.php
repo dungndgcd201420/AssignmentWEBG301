@@ -132,20 +132,26 @@ class __TwigTemplate_4c0c51a9fe2c9311de6026d22b9b2f286757f6e224ea0fd9569a610e81a
             // line 82
             echo "              <a class=\"nav-link\" href=\"/";
             echo ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 82, $this->source); })()), "user", [], "any", false, false, false, 82)) ? ("logout") : ("login"));
-            echo "\" @click=\"isOpen = false\"><button class=\"btn btn-primary me-2\"> ";
-            echo ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 82, $this->source); })()), "user", [], "any", false, false, false, 82)) ? ("Logout") : ("Login"));
-            echo " </button></a>
-              ";
-        } else {
+            echo "\" @click=\"isOpen = false\"><button class=\"btn btn-primary me-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
+                <path d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+              </svg>   ";
             // line 84
-            echo "              <a class=\"nav-link\" href=\"/";
-            echo ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 84, $this->source); })()), "user", [], "any", false, false, false, 84)) ? ("logout") : ("login"));
-            echo "\" @click=\"isOpen = false\"><button class=\"btn btn-danger me-2\"> ";
             echo ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 84, $this->source); })()), "user", [], "any", false, false, false, 84)) ? ("Logout") : ("Login"));
             echo " </button></a>
               ";
+        } else {
+            // line 86
+            echo "              <a class=\"nav-link\" href=\"/";
+            echo ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 86, $this->source); })()), "user", [], "any", false, false, false, 86)) ? ("logout") : ("login"));
+            echo "\" @click=\"isOpen = false\"><button class=\"btn btn-danger me-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
+                <path d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+              </svg>   ";
+            // line 88
+            echo ((twig_get_attribute($this->env, $this->source, (isset($context["app"]) || array_key_exists("app", $context) ? $context["app"] : (function () { throw new RuntimeError('Variable "app" does not exist.', 88, $this->source); })()), "user", [], "any", false, false, false, 88)) ? ("Logout") : ("Login"));
+            echo " </button></a>
+              ";
         }
-        // line 86
+        // line 90
         echo "            </div>
           </div>
         </div>
@@ -158,17 +164,17 @@ class __TwigTemplate_4c0c51a9fe2c9311de6026d22b9b2f286757f6e224ea0fd9569a610e81a
       
       <div class=\"form-group\">
        ";
-        // line 97
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 97, $this->source); })()), 'form_start');
+        // line 101
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 101, $this->source); })()), 'form_start');
         echo "
         ";
-        // line 98
-        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 98, $this->source); })()), 'widget');
+        // line 102
+        echo $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->searchAndRenderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 102, $this->source); })()), 'widget');
         echo "
         <input type=\"submit\" value=\"Edit\" class=\"btn btn-primary text-center\" />
          ";
-        // line 100
-        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 100, $this->source); })()), 'form_end');
+        // line 104
+        echo         $this->env->getRuntime('Symfony\Component\Form\FormRenderer')->renderBlock((isset($context["edit_form"]) || array_key_exists("edit_form", $context) ? $context["edit_form"] : (function () { throw new RuntimeError('Variable "edit_form" does not exist.', 104, $this->source); })()), 'form_end');
         echo "
       </div>
       
@@ -257,7 +263,7 @@ class __TwigTemplate_4c0c51a9fe2c9311de6026d22b9b2f286757f6e224ea0fd9569a610e81a
 
     public function getDebugInfo()
     {
-        return array (  199 => 17,  189 => 16,  171 => 100,  166 => 98,  162 => 97,  149 => 86,  141 => 84,  133 => 82,  131 => 81,  112 => 65,  103 => 58,  101 => 16,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  205 => 17,  195 => 16,  177 => 104,  172 => 102,  168 => 101,  155 => 90,  150 => 88,  144 => 86,  139 => 84,  133 => 82,  131 => 81,  112 => 65,  103 => 58,  101 => 16,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -343,9 +349,13 @@ class __TwigTemplate_4c0c51a9fe2c9311de6026d22b9b2f286757f6e224ea0fd9569a610e81a
               <li class=\"nav-item me-4\"><a class=\"nav-link\" href=\"../inventory/contact\">About Us</a></li>
             </ul>
             <div class=\"ms-lg-auto\">{% if app.user == null %}
-              <a class=\"nav-link\" href=\"/{{app.user ? 'logout' : 'login'}}\" @click=\"isOpen = false\"><button class=\"btn btn-primary me-2\"> {{ app.user ? 'Logout' : 'Login' }} </button></a>
+              <a class=\"nav-link\" href=\"/{{app.user ? 'logout' : 'login'}}\" @click=\"isOpen = false\"><button class=\"btn btn-primary me-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
+                <path d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+              </svg>   {{ app.user ? 'Logout' : 'Login' }} </button></a>
               {% else %}
-              <a class=\"nav-link\" href=\"/{{app.user ? 'logout' : 'login'}}\" @click=\"isOpen = false\"><button class=\"btn btn-danger me-2\"> {{ app.user ? 'Logout' : 'Login' }} </button></a>
+              <a class=\"nav-link\" href=\"/{{app.user ? 'logout' : 'login'}}\" @click=\"isOpen = false\"><button class=\"btn btn-danger me-2\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"currentColor\" class=\"bi bi-person\" viewBox=\"0 0 16 16\">
+                <path d=\"M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z\"/>
+              </svg>   {{ app.user ? 'Logout' : 'Login' }} </button></a>
               {% endif %}
             </div>
           </div>

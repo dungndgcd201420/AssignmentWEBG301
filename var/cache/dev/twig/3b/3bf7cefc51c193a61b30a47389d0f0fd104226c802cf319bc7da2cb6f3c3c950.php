@@ -179,7 +179,7 @@ class __TwigTemplate_6ace270da4362c07b384c7e41ceb23ac8399581ce4b6cbc8c15b0441e41
         echo "\" class=\"bi bi-square-fill\" viewBox=\"0 0 16 16\">
               <path d=\"M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z\"/>
             </svg></strong></p>
-            <p class=\"card-text\">";
+            <p class=\"card-text\">Size ";
         // line 79
         echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, (isset($context["shirt"]) || array_key_exists("shirt", $context) ? $context["shirt"] : (function () { throw new RuntimeError('Variable "shirt" does not exist.', 79, $this->source); })()), "Size", [], "any", false, false, false, 79), "html", null, true);
         echo "</p>
@@ -199,10 +199,6 @@ class __TwigTemplate_6ace270da4362c07b384c7e41ceb23ac8399581ce4b6cbc8c15b0441e41
       
 
 
-        
-   
-
- 
 ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -256,7 +252,7 @@ class __TwigTemplate_6ace270da4362c07b384c7e41ceb23ac8399581ce4b6cbc8c15b0441e41
 
     public function getDebugInfo()
     {
-        return array (  226 => 17,  216 => 16,  192 => 81,  188 => 80,  184 => 79,  176 => 76,  169 => 74,  156 => 63,  151 => 61,  145 => 59,  140 => 57,  134 => 55,  132 => 54,  113 => 38,  103 => 30,  101 => 16,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
+        return array (  222 => 17,  212 => 16,  192 => 81,  188 => 80,  184 => 79,  176 => 76,  169 => 74,  156 => 63,  151 => 61,  145 => 59,  140 => 57,  134 => 55,  132 => 54,  113 => 38,  103 => 30,  101 => 16,  89 => 6,  79 => 5,  60 => 3,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -339,7 +335,7 @@ class __TwigTemplate_6ace270da4362c07b384c7e41ceb23ac8399581ce4b6cbc8c15b0441e41
             <p class=\"card-text\" style=\"color: black;\"><strong>{{shirt.Color}}               <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"{{shirt.Color}}\" class=\"bi bi-square-fill\" viewBox=\"0 0 16 16\">
               <path d=\"M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z\"/>
             </svg></strong></p>
-            <p class=\"card-text\">{{shirt.Size}}</p>
+            <p class=\"card-text\">Size {{shirt.Size}}</p>
             <p class=\"card-text\"><strong>\${{shirt.Price}}</strong></p>
             <p class=\"card-text lead\">In stock: {{shirt.Quantity}}</p>
           </div>
@@ -350,10 +346,6 @@ class __TwigTemplate_6ace270da4362c07b384c7e41ceb23ac8399581ce4b6cbc8c15b0441e41
       
 
 
-        
-   
-
- 
 {% endblock %}", "products/shirt_show.html.twig", "C:\\Users\\klysm\\AssignmentWEBG301\\templates\\products\\shirt_show.html.twig");
     }
 }

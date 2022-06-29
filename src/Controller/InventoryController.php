@@ -11,8 +11,7 @@ class InventoryController extends AbstractController
     /**
      * @Route("/inventory", name="app_inventory")
      */
-    public function index(): Response
-    {
+    public function index(): Response{
         return $this->render('inventory/index.html.twig', [
             'controller_name' => 'InventoryController',
         ]);
@@ -28,3 +27,5 @@ class InventoryController extends AbstractController
     }
     
 }
+
+

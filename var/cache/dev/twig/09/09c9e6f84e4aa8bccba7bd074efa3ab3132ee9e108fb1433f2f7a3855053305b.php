@@ -169,6 +169,7 @@ class __TwigTemplate_fa90988ba14782c0c4778acd357b90167e91fe6c5a6c1cf2e97bd798d09
               <table class=\"table align-middle mb-0 bg-white table-hover\">
                 <thead class=\"bg-light\">
                   <tr>
+                    <th class=\"header\" scope=\"col\">ID</th>
                     <th class=\"header\" scope=\"col\">Name</th>
                     <th class=\"header\" scope=\"col\">Brand</th>
                      <th class=\"header\" scope=\"col\">Color</th>
@@ -180,52 +181,56 @@ class __TwigTemplate_fa90988ba14782c0c4778acd357b90167e91fe6c5a6c1cf2e97bd798d09
                 </thead>
                   <!-- Product template -->
                      ";
-            // line 78
+            // line 79
             $context['_parent'] = $context;
-            $context['_seq'] = twig_ensure_traversable((isset($context["shirts"]) || array_key_exists("shirts", $context) ? $context["shirts"] : (function () { throw new RuntimeError('Variable "shirts" does not exist.', 78, $this->source); })()));
+            $context['_seq'] = twig_ensure_traversable((isset($context["shirts"]) || array_key_exists("shirts", $context) ? $context["shirts"] : (function () { throw new RuntimeError('Variable "shirts" does not exist.', 79, $this->source); })()));
             foreach ($context['_seq'] as $context["_key"] => $context["shirt"]) {
-                // line 79
+                // line 80
                 echo "              <tr>
                 <td>";
-                // line 80
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Name", [], "any", false, false, false, 80), "html", null, true);
+                // line 81
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "id", [], "any", false, false, false, 81), "html", null, true);
                 echo "</td>
                 <td>";
-                // line 81
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Brand", [], "any", false, false, false, 81), "html", null, true);
+                // line 82
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Name", [], "any", false, false, false, 82), "html", null, true);
+                echo "</td>
+                <td>";
+                // line 83
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Brand", [], "any", false, false, false, 83), "html", null, true);
                 echo "</td>
                   <td>";
-                // line 82
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Color", [], "any", false, false, false, 82), "html", null, true);
+                // line 84
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Color", [], "any", false, false, false, 84), "html", null, true);
                 echo "</td>
                     <td>";
-                // line 83
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Size", [], "any", false, false, false, 83), "html", null, true);
+                // line 85
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Size", [], "any", false, false, false, 85), "html", null, true);
                 echo "</td>
                 <td>";
-                // line 84
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Price", [], "any", false, false, false, 84), "html", null, true);
+                // line 86
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Price", [], "any", false, false, false, 86), "html", null, true);
                 echo "</td>
                  <td>";
-                // line 85
-                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Quantity", [], "any", false, false, false, 85), "html", null, true);
+                // line 87
+                echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["shirt"], "Quantity", [], "any", false, false, false, 87), "html", null, true);
                 echo "</td>
                 <td>
                 <a class=\"btn btn-primary\" href=\"";
-                // line 87
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("shirt_show", ["id" => twig_get_attribute($this->env, $this->source, $context["shirt"], "id", [], "any", false, false, false, 87)]), "html", null, true);
+                // line 89
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("shirt_show", ["id" => twig_get_attribute($this->env, $this->source, $context["shirt"], "id", [], "any", false, false, false, 89)]), "html", null, true);
                 echo "\">Show Details</a>
                 </td>
                 <td>
                       <a type=\"button\" class=\"btn btn-outline-primary\" href=\"";
-                // line 90
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("shirt_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["shirt"], "id", [], "any", false, false, false, 90)]), "html", null, true);
+                // line 92
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("shirt_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["shirt"], "id", [], "any", false, false, false, 92)]), "html", null, true);
                 echo "\">Edit</a>
                     </td>
                     <td>
                       <a type=\"button\" class=\"btn btn-danger\"  href=\"";
-                // line 93
-                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("shirt_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["shirt"], "id", [], "any", false, false, false, 93)]), "html", null, true);
+                // line 95
+                echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("shirt_delete", ["id" => twig_get_attribute($this->env, $this->source, $context["shirt"], "id", [], "any", false, false, false, 95)]), "html", null, true);
                 echo "\">Delete</a>
                     </td>
             </tr>
@@ -234,9 +239,9 @@ class __TwigTemplate_fa90988ba14782c0c4778acd357b90167e91fe6c5a6c1cf2e97bd798d09
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['_key'], $context['shirt'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
-            // line 97
-            echo "           ";
             // line 99
+            echo "           ";
+            // line 101
             echo "              </table>
             </div>
           </div>
@@ -245,7 +250,7 @@ class __TwigTemplate_fa90988ba14782c0c4778acd357b90167e91fe6c5a6c1cf2e97bd798d09
 \t  </section>
   ";
         }
-        // line 106
+        // line 108
         echo "  
     <script src=\"js/bootstrap/bootstrap.bundle.min.js\"></script>
   </body>
@@ -271,7 +276,7 @@ class __TwigTemplate_fa90988ba14782c0c4778acd357b90167e91fe6c5a6c1cf2e97bd798d09
 
     public function getDebugInfo()
     {
-        return array (  249 => 106,  240 => 99,  238 => 97,  228 => 93,  222 => 90,  216 => 87,  211 => 85,  207 => 84,  203 => 83,  199 => 82,  195 => 81,  191 => 80,  188 => 79,  184 => 78,  157 => 53,  152 => 50,  150 => 49,  143 => 44,  138 => 42,  132 => 40,  127 => 38,  121 => 36,  119 => 35,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  254 => 108,  245 => 101,  243 => 99,  233 => 95,  227 => 92,  221 => 89,  216 => 87,  212 => 86,  208 => 85,  204 => 84,  200 => 83,  196 => 82,  192 => 81,  189 => 80,  185 => 79,  157 => 53,  152 => 50,  150 => 49,  143 => 44,  138 => 42,  132 => 40,  127 => 38,  121 => 36,  119 => 35,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -343,6 +348,7 @@ class __TwigTemplate_fa90988ba14782c0c4778acd357b90167e91fe6c5a6c1cf2e97bd798d09
               <table class=\"table align-middle mb-0 bg-white table-hover\">
                 <thead class=\"bg-light\">
                   <tr>
+                    <th class=\"header\" scope=\"col\">ID</th>
                     <th class=\"header\" scope=\"col\">Name</th>
                     <th class=\"header\" scope=\"col\">Brand</th>
                      <th class=\"header\" scope=\"col\">Color</th>
@@ -355,6 +361,7 @@ class __TwigTemplate_fa90988ba14782c0c4778acd357b90167e91fe6c5a6c1cf2e97bd798d09
                   <!-- Product template -->
                      {% for shirt in shirts %}
               <tr>
+                <td>{{ shirt.id }}</td>
                 <td>{{ shirt.Name }}</td>
                 <td>{{ shirt.Brand }}</td>
                   <td>{{ shirt.Color}}</td>
